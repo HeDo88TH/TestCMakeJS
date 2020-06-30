@@ -13,16 +13,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: show
-      run: ls
-    - name: make build folder
-      run: mkdir build
-    - name: go into build folder
-      run: cd build
-    - name: show
-      run: ls -l ..
     - name: cmake
-      run: cmake .. 
+      run: cmake . 
     - name: make
       run: make
 
